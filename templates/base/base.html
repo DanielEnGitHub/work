@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% block extrahead %}
+    {% endblock %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block tittle %} Document {% endblock %}</title>
+</head>
+<body>
+    {% block nav %}
+    <h4>ESTE ES EL BLOQUE DEL HEADER BASE</h4>
+    {% endblock %}
+    {% block content %}
+    <h5>ESTE ES EL CONTENIDO DEL ARCHIVO BASE</h5>
+    {% endblock %}
+
+    {% block footer %}
+    <h6>ESTE ES EL FOOTER DEL CONTENIDO BASE</h6>
+    {% endblock %}
+
+
+    {% block extrajs %}
+    {% endblock %}
+</body>
+</html>
