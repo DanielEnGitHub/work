@@ -12,9 +12,10 @@
     <title>{% block tittle %} Document {% endblock %}</title>
 </head>
 <body>
-    {% block nav %}
+    {% block navbar %}
     <h4>ESTE ES EL BLOQUE DEL HEADER BASE</h4>
     {% endblock %}
+
     {% block content %}
     <h5>ESTE ES EL CONTENIDO DEL ARCHIVO BASE</h5>
     {% endblock %}
@@ -22,7 +23,6 @@
     {% block footer %}
     <h6>ESTE ES EL FOOTER DEL CONTENIDO BASE</h6>
     {% endblock %}
-
 
     {% block extrajs %}
     {% endblock %}
