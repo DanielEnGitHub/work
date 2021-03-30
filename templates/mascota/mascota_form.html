@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+
+
+{% block content %}
+    <br>
+    <center><h3>REGISTRO DE MASCOTA</h3></center>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form><br>
+    
+{% endblock %}
+    
